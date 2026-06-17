@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  FILE STRUCTURE:
+  1. <head>   — Page settings, fonts, and styles
+  2. <header> — Top bar (phone/email) + navigation menu
+  3. <main>   — All visible page sections
+       • Hero section
+       • Why Choose Us
+       • Financing section
+       • Trade-in section
+       • Reviews
+       • Contact / Map
+       • FAQ
+  4. <footer> — Copyright and links
+  5. <script> — Small interactive scripts (accordion FAQ)
+  ====================================================
+-->
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Basic page settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Used Car Dealership in Calgary | Stampede Auto</title>
+
+  <!-- Google Font: Muli (similar weight/feel to the original) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<!-- ================================================
+     BODY starts here
+     ================================================ -->
+<body>
+
+  <!-- ============================================
+       TOP BAR (phone number + email)
+       ============================================ -->
+  <div class="top-bar">
+    <a href="tel:4038888174">(403) 888-8174</a>
+    <a href="mailto:info@stampedeauto.com">info@stampedeauto.com</a>
+  </div>
+
+
+  <!-- ============================================
+       HEADER & NAVIGATION
+       ============================================ -->
+  <header>
+    <nav>
+      <!-- Logo (links to homepage) -->
+      <a class="nav-logo" href="https://stampedeauto.com">
+        <img
+          src="https://stampedeauto.com/img/SA-logo240x48-wht.webp"
+          alt="Stampede Auto logo"
+        >
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://stampedeauto.com/used-cars-calgary/">Inventory</a></li>
+        <li><a href="https://stampedeauto.com/financing/">Financing</a></li>
+        <li><a href="https://stampedeauto.com/sell-your-car/">Sell My Car</a></li>
+        <li><a href="https://stampedeauto.com/blog/">Blog</a></li>
+        <li><a href="https://stampedeauto.com/about/">About</a></li>
+        <li><a href="https://stampedeauto.com/contact-us/">Contact</a></li>
+        <li>
+          <a class="nav-cta" href="https://stampedeauto.com/applynow/">
+            Get Approved
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+    </nav>
+  </header>
+
+
+  <!-- ============================================
+       MAIN CONTENT AREA
+       ============================================ -->
+  <main>
+
+    <!-- ==========================================
+         SECTION 1 – HERO
+         ========================================== -->
+    <section class="hero">
+      <div class="hero-content">
+
+        <h1>Used Car Dealership in Calgary</h1>
+
+        <p>
+          Explore the distinction of premium pre-owned vehicles at Calgary's
+          favourite used car dealer, Stampede Auto. Unparalleled customer service,
+          flexible financing, and a no-pressure buying experience.
+        </p>
+
+        <!-- Two call-to-action buttons -->
+        <div class="hero-buttons">
+          <a class="btn" href="https://stampedeauto.com/used-cars-calgary/">
+            Browse Inventory
+          </a>
+          <a class="btn-outline" href="https://stampedeauto.com/applynow/">
+            Get Approved Now
+          </a>
+        </div>
+
+        <!-- Vehicle category quick links -->
+        <div class="hero-categories">
+
+          <a class="category-card" href="https://stampedeauto.com/used-sedans/">
+            <img
+              src="https://stampedeauto.com/img/carimg1.webp"
+              alt="Sedan"
+            >
+            Sedans
+          </a>
+
+          <a class="category-card" href="https://stampedeauto.com/used-vans-calgary/">
+            <img
+              src="https://stampedeauto.com/img/carimg2.webp"
+              alt="Van"
+            >
+            Vans
+          </a>
+
+          <a class="category-card" href="https://stampedeauto.com/used-trucks/">
+            <img
+              src="https://stampedeauto.com/img/carimg3.webp"
+              alt="Truck"
+            >
+            Trucks
+          </a>
+
+          <a class="category-card" href="https://stampedeauto.com/used-cars-calgary/">
+            <img
+              src="https://stampedeauto.com/img/carimg4.webp"
+              alt="SUV"
+            >
+            SUVs
+          </a>
+
+        </div><!-- .hero-categories -->
+      </div><!-- .hero-content -->
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 2 – WHY CHOOSE US
+         ========================================== -->
+    <section class="section why-us">
+      <div class="container">
+
+        <h2 class="section-title">Why Choose Stampede Auto?</h2>
+
+        <!-- 4-column grid of feature cards -->
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">🚗</div>
+            <h3>Extensive Inventory Across All Brands</h3>
+            <p>
+              A diverse selection of high-quality used cars, including luxury
+              brands like BMW and Maserati, plus popular everyday makes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Flexible Financing for Everyone</h3>
+            <p>
+              Partnerships with over 27 lenders — including subprime options —
+              so we can help regardless of your credit situation.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Transparent and Honest Buying</h3>
+            <p>
+              A no-pressure, friendly environment focused on transparency
+              throughout every step of the car buying process.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Dedicated Customer Service</h3>
+            <p>
+              Experienced salespeople, managers, and mechanics committed
+              to solving your problems and meeting your needs.
+            </p>
+          </div>
+
+        </div><!-- .features-grid -->
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 3 – FINANCING INFO
+         (text left, image right)
+         ========================================== -->
+    <section class="section financing">
+      <div class="container">
+
+        <div class="split-layout">
+
+          <!-- Left: text content -->
+          <div class="split-content">
+            <h2>Used Car Financing in Calgary</h2>
+            <p>
+              Questioning your financing options? Once you find a vehicle you
+              love, speak with our finance team. Our professionals will walk you
+              through every option and help secure the best loan for your situation.
+            </p>
+
+            <!-- Checklist of financing benefits -->
+            <ul class="check-list">
+              <li>Comprehensive Vehicle History and Condition Assurance</li>
+              <li>Customized Financing Options for All Credit Profiles</li>
+              <li>Exceptional After-Sale Support and Warranty</li>
+            </ul>
+
+            <a class="btn" href="https://stampedeauto.com/applynow/">
+              Get Instant Approval Now!
+            </a>
+          </div>
+
+          <!-- Right: image -->
+          <div class="split-image">
+            <img
+              src="https://stampedeauto.com/img/car_finance-scaled-1.webp"
+              alt="Car financing at Stampede Auto Calgary"
+            >
+          </div>
+
+        </div><!-- .split-layout -->
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 4 – SELL / TRADE-IN BANNER
+         ========================================== -->
+    <section class="section trade-in">
+      <div class="container">
+        <div class="trade-in-inner">
+
+          <h2>Sell or Trade Your Car in Calgary</h2>
+
+          <p>
+            If you're interested in selling your car or trading it toward a new
+            purchase, Stampede Auto makes the process simple and fair.
+          </p>
+
+          <a class="btn" href="https://stampedeauto.com/sell-your-car/">
+            Get a Free Offer
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 5 – CUSTOMER REVIEWS
+         ========================================== -->
+    <section class="section reviews">
+      <div class="container">
+
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <!-- 3-column review grid -->
+        <div class="reviews-grid">
+
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "After being away for a year I wanted to treat my wife to something
+              special. I found out an old buddy had opened his own dealership, so I
+              reached out — and the experience was incredible from start to finish."
+            </p>
+            <div class="reviewer-name">khalil Hijazi</div>
+            <div class="review-date">2 years ago</div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "I had an outstanding experience at Stampede Auto, and it's all
+              thanks to Kazz and Sam! From the moment I walked through the door,
+              I felt welcomed and valued as a customer."
+            </p>
+            <div class="reviewer-name">Moe Elali</div>
+            <div class="review-date">1 year ago</div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Amazing service and workers. Would recommend to anyone!"
+            </p>
+            <div class="reviewer-name">Maryam Dawood</div>
+            <div class="review-date">1 year ago</div>
+          </div>
+
+        </div><!-- .reviews-grid -->
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 6 – CONTACT US + MAP
+         ========================================== -->
+    <section class="section contact-section">
+      <div class="container">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-grid">
+
+          <!-- Left: contact details and hours -->
+          <div class="contact-info">
+
+            <h2>Stampede Auto Calgary</h2>
+
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:4038888174">(403) 888-8174</a>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@stampedeauto.com">info@stampedeauto.com</a>
+            </p>
+
+            <p>
+              <a href="https://maps.google.com/?q=Stampede+Auto+Calgary" target="_blank">
+                ➡️ Get directions to our dealership
+              </a>
+            </p>
+
+            <!-- Business hours -->
+            <ul class="hours-list">
+              <li><span>Sunday</span>    <span>Closed</span></li>
+              <li><span>Monday</span>    <span>9:00 a.m. – 8:00 p.m.</span></li>
+              <li><span>Tuesday</span>   <span>9:00 a.m. – 8:00 p.m.</span></li>
+              <li><span>Wednesday</span> <span>9:00 a.m. – 8:00 p.m.</span></li>
+              <li><span>Thursday</span>  <span>9:00 a.m. – 8:00 p.m.</span></li>
+              <li><span>Friday</span>    <span>9:00 a.m. – 8:00 p.m.</span></li>
+              <li><span>Saturday</span>  <span>9:00 a.m. – 6:00 p.m.</span></li>
+            </ul>
+
+            <a class="btn" href="https://stampedeauto.com/contact-us/">
+              Send Us a Message
+            </a>
+
+          </div>
+
+          <!-- Right: embedded Google Map -->
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.0078960425644!2d-114.00019909999999!3d51.052941999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717b94532f825f%3A0xd642c57abd22b273!2sStampede%20Auto%20-%20Used%20Car%20Dealership!5e0!3m2!1sen!2sua!4v1778845652978!5m2!1sen!2sua"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Stampede Auto location on Google Maps"
+            ></iframe>
+          </div>
+
+        </div><!-- .contact-grid -->
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 7 – FAQ ACCORDION
+         ========================================== -->
+    <section class="section faq">
+      <div class="container">
+
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <!-- Each .faq-item contains a button (question) and a div (answer).
+             JavaScript below toggles the "open" class to show/hide answers. -->
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What types of used cars do you offer in Calgary?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Stampede Auto carries a wide selection of pre-owned vehicles to suit
+              every budget and lifestyle. Our inventory includes sedans, SUVs, trucks,
+              vans, hybrids, and electric vehicles from a variety of brands.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer financing for bad credit?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We work with buyers at all credit levels, including those with bad
+              credit, no credit history, or past financial difficulties. Our finance
+              team has relationships with multiple lenders and can often find solutions
+              that traditional dealerships cannot.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How long does it take to get approved for financing?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Most customers receive a financing decision the same day they apply.
+              In many cases, approval can be confirmed within a few hours. Simply
+              provide basic personal and employment information and our team does
+              the rest.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I trade in my current vehicle?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We accept trade-ins and will assess the value of your current
+              vehicle at the time of purchase. Trading in your car is a convenient
+              way to reduce the overall cost of your next vehicle.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Are your used cars inspected before sale?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. Every vehicle undergoes a thorough inspection before it is offered
+              for sale. We check mechanical components, safety systems, and overall
+              condition to ensure it meets a reliable standard.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do your vehicles come with a warranty?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Warranty coverage depends on the specific vehicle and its age, mileage,
+              and condition. Some vehicles may still carry a portion of the original
+              manufacturer's warranty, while others may be eligible for an extended
+              warranty plan. Our team will clearly explain all options.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you provide vehicle history reports?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. We provide vehicle history reports so you can review a car's
+              background before committing to a purchase, including previous
+              ownership, accident records, service history, and title status.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Where is your dealership located in Calgary?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Stampede Auto is located in Calgary, Alberta. You can reach us by
+              phone at (403) 888-8174 or by email to arrange a visit or ask about
+              a specific vehicle.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I test drive a vehicle before buying?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. We encourage every buyer to take a test drive before
+              making a decision. Simply contact us to schedule a time that works
+              for you, or stop by our Calgary location.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What makes your dealership different?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              At Stampede Auto, we focus on making used car buying in Calgary
+              straightforward and honest. We offer a broad inventory across brands,
+              body types, and price points. Our team is trained to listen first and
+              recommend second — no pressure, no games.
+            </div>
+          </div>
+
+        </div><!-- .faq-list -->
+      </div>
+    </section>
+
+  </main><!-- end main -->
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="container">
+
+      <!-- 4-column footer grid -->
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand info -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img
+              src="https://stampedeauto.com/img/SA-logo240x48-wht.webp"
+              alt="Stampede Auto logo"
+            >
+          </div>
+          <p class="footer-desc">
+            Calgary's trusted used car dealership. Flexible financing,
+            honest pricing, and a huge selection of quality pre-owned vehicles.
+          </p>
+          <!-- Social media icons (using emoji as placeholders) -->
+          <div class="social-links">
+            <a href="https://www.facebook.com/stampedeauto" target="_blank" aria-label="Facebook">📘</a>
+            <a href="https://www.instagram.com/stampedeauto" target="_blank" aria-label="Instagram">📷</a>
+            <a href="https://www.youtube.com/stampedeauto" target="_blank" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Inventory links -->
+        <div class="footer-col">
+          <h4>Inventory</h4>
+          <ul>
+            <li><a href="https://stampedeauto.com/used-cars-calgary/">Used Cars Calgary</a></li>
+            <li><a href="https://stampedeauto.com/used-sedans/">Sedans</a></li>
+            <li><a href="https://stampedeauto.com/used-trucks/">Trucks</a></li>
+            <li><a href="https://stampedeauto.com/used-vans-calgary/">Vans</a></li>
+            <li><a href="https://stampedeauto.com/used-bmw-calgary/">Used BMW</a></li>
+            <li><a href="https://stampedeauto.com/toyota/">Used Toyota</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Financing links -->
+        <div class="footer-col">
+          <h4>Financing</h4>
+          <ul>
+            <li><a href="https://stampedeauto.com/financing/">Car Financing</a></li>
+            <li><a href="https://stampedeauto.com/bad-credit-car-loans-calgary/">Bad Credit Loans</a></li>
+            <li><a href="https://stampedeauto.com/newcomer-financing-program/">Newcomer Program</a></li>
+            <li><a href="https://stampedeauto.com/car-lease-calculator-calgary/">Lease Calculator</a></li>
+            <li><a href="https://stampedeauto.com/applynow/">Apply Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Company links -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="https://stampedeauto.com/about/">About Us</a></li>
+            <li><a href="https://stampedeauto.com/sell-your-car/">Sell My Car</a></li>
+            <li><a href="https://stampedeauto.com/blog/">Blog</a></li>
+            <li><a href="https://stampedeauto.com/contact-us/">Contact</a></li>
+            <li><a href="https://stampedeauto.com/faq/">FAQ</a></li>
+            <li><a href="https://stampedeauto.com/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div><!-- .footer-grid -->
+
+      <hr class="footer-divider">
+
+      <!-- Copyright row -->
+      <div class="footer-bottom">
+        <span>© 2025 Stampede Auto. All rights reserved.</span>
+        <span>
+          <a href="https://stampedeauto.com/terms-service/">Terms of Service</a>
+          &nbsp;|&nbsp;
+          <a href="https://stampedeauto.com/privacy-policy/">Privacy Policy</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
